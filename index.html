@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <title>나의 첫 웹사이트</title>
+  <meta charset="UTF-8">
+  <title>나의 시크릿 노션 공간</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- 노션 스타일 깔끔한 테마 CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-    <h1>안녕하세요! 깃허브로 만든 웹사이트입니다.</h1>
-    <p>성공적으로 페이지가 개설되었습니다 🎉</p>
+  <div id="app">로딩 중...</div>
+  <script>
+    window.$docsify = {
+      name: '🔒 나의 프라이빗 노트',
+      repo: '',
+      loadSidebar: true, // 사용자가 오픈한 글만 목차에 보여주는 기능 활성화
+      subMaxLevel: 2
+    }
+  </script>
+  <!-- Docsify 필수 스크립트 -->
+  <script href="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 📋 원클릭 본문/코드 복사 플러그인 (자동 탑재) -->
+  <script href="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
